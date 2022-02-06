@@ -1,9 +1,3 @@
-//const Faker = require('./node_modules/faker/index.js');
-//const faker = require('./node_modules/faker/index.js');
-
-/* const FAKE_FULL_NAME = faker.name.findName();
-const FAKE_EMAIL = faker.internet.email();
-const FAKE_ADDRESS = faker.address.secondaryAddress(); */
 describe('My First Test', () => {
   before(() => {
     cy.visit('https://demoqa.com')

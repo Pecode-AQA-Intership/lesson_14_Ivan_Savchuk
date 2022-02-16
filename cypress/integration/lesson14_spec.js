@@ -1,11 +1,12 @@
 describe('My First Test', () => {
-  before(() => {
-    cy.visit('https://demoqa.com')
-    })
-
-    after(() => {
-      cy.reload(); // cleanup text from the inputs fields
+  beforeEach(() => {
+    cy.visit('/')
+    cy.reload()
     });
+
+    //after(() => {
+      //cy.reload(); // cleanup text from the inputs fields
+   // });
       // Should be on a new URL which includes '/elements'
       it('find "Elements" button', () => {
         cy.contains('Elements').click().url().should('include', '/elements')
